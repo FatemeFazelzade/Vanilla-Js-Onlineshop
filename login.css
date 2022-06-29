@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Audiowide", sans-serif;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.login--container{
+    height: 80vh;
+    width: 35rem;
+    max-width: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( .5rem );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.login--header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login--header h1{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.login--logo{
+    height: 8rem;
+    width: 8rem;
+    margin: 4rem 0 2rem 0 ;
+}
+.login--main{
+    text-align: center;
+}
+.login--main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login--main form *:not(:first-child){
+    margin-top: 10px;
+}
+.login--main form input{
+    outline: none;
+    border: 1px solid rgb(209, 207, 207);
+    padding: 10px 3px;
+    border-radius:5px;
+    width: 80%;
+    margin-top: 1rem;
+}
+.label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+#login-msg{
+    color: #8d082e;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#login--btn{
+    text-decoration: none;
+    background-color: #FC1C5C;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: .5rem;
+    text-align: center;
+    margin-top: 3rem;
+    width: 80%;
+}
+#login--btn:hover{
+    background-color: #8d082e;
+}
+#error {
+    margin-top: 1rem;
+}

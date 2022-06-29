@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/logo.svg" type="image/x-icon"/>
+    <title>Phey Online shop</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body id="login-page">
+  <div class="login--container">
+    <div class="login--header">
+        <div class="login-logo">
+      <img src="./assets/logo.svg" alt="Logo" class="login--logo"/>
+      </div>
+      <h1>Log in</h1>
+      <div class="login--main">
+      <form id="form" action="" method="GET">
+        <div>
+          <label class="label">Username</label>
+          <input id="username" type="text" name="userid" placeholder= "Username here..."/>
+        </div>
+        <div>
+          <label class="label">Password</label>
+          <input id="password" type="password" name="pswrd" placeholder="Password here..."/>
+        </div>
+        <button id="login--btn" type="button" onclick="check()">Log In</button>
+    </form>
+    <div id="error"></div>
+   </div>
+  </div>
+ </div>
+ </body>
+
+</html>

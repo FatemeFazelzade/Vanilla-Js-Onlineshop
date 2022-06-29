@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="./assets/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Add new product</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="bg-picture" id="add-product-page">
+    <header class="header">
+      <div class="user--profile">
+        <div class="user--profile--photo pic">
+            <img class="profile-pic pic" src="./assets/admin.png" alt="User profile picture">
+        </div>
+        <sapan id="user-name"> Welcome, Admin :)</span>
+    </div>
+    </header>
+    <main>
+    <div class="newproduct--container">
+      <div class="newproduct--form">
+    <form id="newProduct">
+        <label for="pname">Product name:</label><br>
+        <input type="text" id="name" name="pname" required><br>
+        <label for="lname">Price:</label><br>
+        <input type="text" id="price" name="price" required><br>
+        <label for="fname">Image:</label><br>
+        <input type="file" id="image" name="image" required><br><br>
+        <button id="newproduct--btn" type="button" onclick="addProductPage()">Add!</button>
+      </form> 
+    </div>
+    </main>
+  </div>
+  </body>
+</html>
